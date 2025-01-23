@@ -1,0 +1,58 @@
+/* #root styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4e6ff; /* Light purple background */
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #7e57c2); /* Purple shadow on hover */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #5e35b1); /* Darker purple for React logo */
+}
+
+/* Logo spin animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 2em;
+  background-color: #d1c4e9; /* Soft purple background for cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+/* Link styling */
+.read-the-docs {
+  color: #4a148c; /* Dark purple for text links */
+}
+
+.read-the-docs:hover {
+  color: #7e57c2; /* Lighter purple for hover effect */
+}
