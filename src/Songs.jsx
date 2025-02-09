@@ -1,6 +1,6 @@
 import './index.css';
 
-export default function Songs({ song, deleteSong, toggleFavorite }) {
+export default function Songs({ song, deleteSong, toggleFavorite, startEditing }) {
   return (
     <div className="playlist-entry">
       <h2>{song.title}</h2>
@@ -14,6 +14,9 @@ export default function Songs({ song, deleteSong, toggleFavorite }) {
             </button>
             <button type="button" onClick={() => deleteSong(song.id)}>
               Delete
+            </button>
+            <button type="button" onClick={() => startEditing(song)}>  
+              Edit
             </button>
           </div>
         </div>
